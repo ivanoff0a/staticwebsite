@@ -1,0 +1,38 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    background-color: white;
+}
+
+.header-mobile {
+    display: block;
+}
+
+.header-desktop {
+    display: none;
+}
+
+
+
+
+.header-logo {
+    width: 30px;
+}
+
+.mobile-menu {
+    position: absolute;
+}
+
+
+@media screen and (min-width: 768px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .header-desktop {
+        display: block;
+    }
+}

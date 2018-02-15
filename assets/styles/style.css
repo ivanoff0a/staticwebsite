@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, a, p {
+    margin: 0;
+    font-family: "Mont";
+    color: #565656;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
