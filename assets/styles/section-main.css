@@ -1,0 +1,41 @@
+.section-main {
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+}
+
+.main-content {
+    padding: 0 10px;
+}
+
+h1.-from-above {
+    transform: translateY(-100%);
+    transition: .4s ease-out;
+}
+
+h2.-from-bottom {
+    transform: translateY(100%);
+    transition: .7s ease-out;
+}
+
+h1.-animated,
+h2.-animated {
+    transform: translateY(0);
+}
+
+.title,
+.subtitle {
+    overflow: hidden;
+}
+
+@media screen and (min-width: 400px){
+    h1 {
+        font-size: 90px;
+        transition: .3s;
+    }
+
+    h2 {
+        font-size: 40px;
+        transition: .3s;
+    }
+}
