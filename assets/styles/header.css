@@ -29,18 +29,99 @@ header .wrapper {
     z-index: 2;
 }
 
+.mobile-toggler:focus {
+  outline-width: 0;
+}
+
+.mobile-toggler [class*='bar-'] {
+  background: #565656;
+  display: block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .2s ease all;
+          transition: .2s ease all;
+  border-radius: 2px;
+  height: 2px;
+  width: 25px;
+  margin-bottom: 4px;
+  
+  /*
+   * Practical values:
+   * border-radius: 2px;
+   * height: 2px;
+   * width: 25px;
+   * margin-bottom: 4px;
+  */
+}
+
+.mobile-toggler .bar-bot {
+  margin-bottom: 0;
+}
+
+.opened .bar-top {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 15% 15%;
+          transform-origin: 15% 15%;
+}
+.opened .bar-mid {
+  opacity: 0;
+}
+.opened .bar-bot {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 15% 95%;
+          transform-origin: 15% 95%;
+}
+
+/*.stick-1,
+.stick-3 {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.stick-1 {
+  transition-property: top, transform;
+}
+
+.stick-3 {
+  transition-property: bottom, transform;
+}
+
+
+.stick-2.is-active {
+  background: none;
+}
+
+.stick-1.is-active {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.stick-3.is-active {
+  bottom: 0;
+  transform: rotate(-45deg);
+}*/
+/*
+.stick-1.is-active,
+.stick-3.is-active {
+  transition-delay: 0s, 0.3s;
+}
+
 .mobile-toggler i {
     display: block;
     margin-bottom: 8px;
     height: 1px;
     width: 30px;
     background-color: #565656;
-}
+}*/
+/*
+
 
 .mobile-toggler i:last-child {
     margin-bottom: 0;
 }
-
+*/
 .mobile-menu {
     position: fixed;
     top: 0;
