@@ -58,16 +58,16 @@ header .wrapper {
   margin-bottom: 0;
 }
 
-.opened .bar-top {
+.-opened .bar-top {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transform-origin: 15% 15%;
           transform-origin: 15% 15%;
 }
-.opened .bar-mid {
+.-opened .bar-mid {
   opacity: 0;
 }
-.opened .bar-bot {
+.-opened .bar-bot {
   -webkit-transform: rotate(45deg);
           transform: rotate(-45deg);
   -webkit-transform-origin: 15% 95%;
