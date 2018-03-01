@@ -28,14 +28,118 @@ h2.-animated {
     overflow: hidden;
 }
 
-@media screen and (min-width: 400px){
-    h1 {
-        font-size: 90px;
-        transition: .3s;
-    }
 
-    h2 {
-        font-size: 40px;
-        transition: .3s;
-    }
+@media screen and (min-width: 375px){ 
+h1 { 
+font-size: 85px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 40px; 
+transition: .3s; 
+} 
+} 
+
+@media screen and (min-width: 425px){ 
+h1 { 
+font-size: 95px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 40px; 
+transition: .3s; 
+} 
+} 
+
+
+@media screen and (min-width: 520px){ 
+h1 { 
+font-size: 105px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 40px; 
+transition: .3s; 
+} 
+} 
+
+
+@media screen and (min-width: 768px){ 
+h1 { 
+font-size: 120px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 45px; 
+transition: .3s; 
+} 
+} 
+
+
+@media screen and (min-width: 1024px){ 
+h1 { 
+font-size: 165px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 50px; 
+transition: .3s; 
+} 
+} 
+
+@media screen and (min-width: 1280px){ 
+h1 { 
+font-size: 185px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 60px; 
+transition: .3s; 
+font-weight: 500; 
+} 
+} 
+
+@media screen and (min-width: 1440px){ 
+h1 { 
+font-size: 205px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 65px; 
+transition: .3s; 
+font-weight: 500; 
+} 
+} 
+
+@media screen and (min-width: 1600px){ 
+h1 { 
+font-size: 225px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 70px; 
+transition: .3s; 
+font-weight: 500; 
+} 
+} 
+
+@media screen and (min-width: 2560px){ 
+h1 { 
+font-size: 250px; 
+transition: .3s; 
+} 
+
+h2 { 
+font-size: 80px; 
+transition: .3s; 
+font-weight: 500; 
+} 
 }

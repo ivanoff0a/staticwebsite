@@ -109,26 +109,96 @@ header .wrapper {
   display: block;
 }
 
-@media screen and (min-width: 600px) {
-  header .wrapper {
-    justify-content: flex-start;
-  }
-
-  .header-logo {
-    margin-right: 25px;
-  }
-
-  .header-links a {
-    margin-right: 15px;
-  }
-
-  .header-desktop {
+.links {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .header-mobile {
-    display: none;
-  }
+    height: 60px;
+    justify-content: center;
 }
+
+@media screen and (min-width: 600px) {
+    header .wrapper {
+        justify-content: flex-start;
+    }
+
+    .header-logo {
+        margin-right: 35px;
+    }
+
+    .header-logo {
+        padding-left: 15px;
+        transition: .3s;
+    }
+
+    .header-links a {
+        padding-right: 35px;
+    }
+
+    .header-desktop {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+
+    .header-links a {
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .header-desktop a {
+        height: 60px;
+        line-height: 60px;
+    }
+
+}
+
+/*.header-links a:after {
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 0px;
+     background: rgba(255,255, 15, 0.65);
+     border-radius: 5px;
+     transition: all 1s ease;
+}
+
+.header-links a:hover:after {
+    content:'';
+    height: 60px;
+}*/
+
+/*================================================================================*/
+
+/*@keyframes bounce {
+ 0%, 20%, 60%, 100% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+ }
+
+ 40% {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+ }
+
+ 80% {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+ }
+}
+
+.header-desktop a:hover {
+    animation: bounce 1s;
+    color: #ffe400;
+}
+
+.header-links a:hover {
+    /*color: #ffe400;*/
+    animation: bounce 1s;
+}
+*/
+/*===============================================================================*/

@@ -22,12 +22,31 @@ ul {
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 80px;
 }
 
 
 h2 {
     font-size: 30px;
     font-weight: 200;
+}
+
+canvas { 
+	position: absolute; 
+	display: block; 
+	vertical-align: bottom; 
+	z-index: 1; 
+} 
+
+/* —— particles.js container —— */ 
+
+#particles-js { 
+	position: absolute; 
+	width: 100%; 
+	background-color: none; 
+	background-image: url(""); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: 50% 50%; 
 }
 
