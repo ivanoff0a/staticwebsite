@@ -42,7 +42,8 @@ canvas {
 #particles-js {
 	width: 100%;
 	background-color: none;
-	background-image: url("");
+	background-image: url("../images/7.jpg");
+	opacity: 0.9;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
