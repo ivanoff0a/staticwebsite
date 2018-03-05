@@ -93,7 +93,7 @@ header .wrapper {
     transform: translateX(100%);
 }
 
-.mobile-menu.-isOpen {
+.header-mobile.-isOpen .mobile-menu {
     transform: translateX(0);
 }
 
