@@ -9,6 +9,7 @@ $(document).ready(function() {
     let modalToggler = $(".js-modal-toggler"),
         modal = $(".modal"),
         headerMobile = $(".header-mobile"),
+        mobileMenu = $(".mobile-menu"),
         modalElems = [
             ".js-modal-github",
             ".js-modal-vk",
@@ -18,9 +19,17 @@ $(document).ready(function() {
             ".modal-toggler"
         ];
 
-    $(".mobile-toggler").click(function(){
+    $(".mobile-toggler").click(function() {
         headerMobile.toggleClass("-isOpen");
         $(this).toggleClass('-opened');
+        // if ((".mobile-toggler").hasClass('-opened')) {
+            modal.removeClass("-active");
+        // }
+    });
+
+    $(".js-modal-toggler").click(function() {
+        headerMobile.removeClass("-isOpen");
+        $(".mobile-toggler").removeClass("-opened");
     });
 
     setTimeout(function(){
