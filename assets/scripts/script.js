@@ -13,9 +13,10 @@ $(document).ready(function() {
             ".js-modal-github",
             ".js-modal-vk",
             ".js-modal-mail",
+            ".js-modal-inst",
             ".modal-map",
             ".modal-toggler"
-        ]
+        ];
 
     $(".mobile-toggler").click(function(){
         headerMobile.toggleClass("-isOpen");
