@@ -13,7 +13,6 @@ $(document).ready(function() {
         modalElems = [
             ".js-modal-github",
             ".js-modal-vk",
-            ".js-modal-mail",
             ".js-modal-inst",
             ".modal-map",
             ".modal-toggler"
@@ -22,9 +21,12 @@ $(document).ready(function() {
     $(".mobile-toggler").click(function() {
         headerMobile.toggleClass("-isOpen");
         $(this).toggleClass('-opened');
-        // if ((".mobile-toggler").hasClass('-opened')) {
-            modal.removeClass("-active");
-        // }
+        headerMobile.toggleClass('-is-open');
+        headerMobile.removeClass('-active');
+        // $('.mobile-info i').toggleClass('-active');
+        // $('.mobile-toggler i').toggleClass('-opened');
+        // $('.modal-map').removeClass('-active');
+        // $('.modal-info').removeClass('-active');
     });
 
     $(".js-modal-toggler").click(function() {

@@ -85,10 +85,10 @@
 	cursor: pointer;
 }
 
-/*.inst img {
+.inst img {
 	width: 75px;
 }
-*/
+
 
 @media screen and (min-width: 320px) {
   .modal {
@@ -105,22 +105,6 @@
     transform: translateY(-50%);
   }
 }
-
-
-/*@media screen and (min-width: 320px) {
-    .modal-info img {
-      width: 40px;
-      transition: .3s ease-out;
-    }
-
-    .js-modal-github {
-      margin-left: 10px;
-    }
-
-    .inst img {
-      width: 60px;
-    }
-}*/
 
 /*modal-map {
 	[
