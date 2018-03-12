@@ -13,18 +13,22 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/wrapper.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/section-main.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/modal.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/section-portfolio.css">
+
+    <link rel="stylesheet" href="assets/styles/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/styles/vendor/owl.theme.default.css">
 
     <meta name="viewport" content="width=device-width initial-scale=1">
 </head>
 <body>
 <header>
-    <div class="wrapper">
+    <div class="wrapper-h">
         <div class="header-logo">
             <img src="assets/images/header-logo.jpg">
         </div>
         <div class="header-desktop">
             <div class="header-links">
-                <a href="">About</a>
+                <a href="#portfolio">About</a>
                 <a href="">Works</a>
                 <a class="js-modal-toggler">Contacts</a>
             </div>
@@ -87,14 +91,37 @@
     </div>
 </div>
 
+<section class="section-portfolio" id="portfolio">
+    <div class="wrapper">
+        <div class="portfolio">
+            <div class="portfolio-info">
+                <h2 class="portfolio-title">First project</h2>
+                <p class="portfolio-desc">Huge project was made by my own. It took 1 month and I faced some problems but I deal with it</p>
+                <button class="portfolio-btn">More</button>
+            </div>
+            <div class="portfolio-gallery owl-carousel">
+                <div class="gallery-item">
+                    <img src="assets/images/slide.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/slide2.jpg">
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/slide3.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/scripts/lib/owl.carousel.js" ></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="assets/scripts/script.js" ></script>
 <script type="text/javascript" src="assets/scripts/lib/particles-min.js" ></script>
 <script type="text/javascript" src="assets/scripts/particle-config.js" ></script>
-
 </body>
 </html>

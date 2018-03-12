@@ -6,6 +6,13 @@ $(document).ready(function() {
     //     "background-image": "url(./assets/images/" + random + ".jpg)"
     // })
 
+
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        autoHeight: true
+    });
+
+
     let modalToggler = $(".js-modal-toggler"),
         modal = $(".modal"),
         headerMobile = $(".header-mobile"),
@@ -19,14 +26,13 @@ $(document).ready(function() {
         ];
 
     $(".mobile-toggler").click(function() {
+        if (modal.hasClass('-active')) {
+            modal.toggleClass('-active');
+        }
         headerMobile.toggleClass("-isOpen");
         $(this).toggleClass('-opened');
         headerMobile.toggleClass('-is-open');
         headerMobile.removeClass('-active');
-        // $('.mobile-info i').toggleClass('-active');
-        // $('.mobile-toggler i').toggleClass('-opened');
-        // $('.modal-map').removeClass('-active');
-        // $('.modal-info').removeClass('-active');
     });
 
     $(".js-modal-toggler").click(function() {
