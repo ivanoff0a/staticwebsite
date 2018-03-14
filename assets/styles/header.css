@@ -115,6 +115,11 @@ header .wrapper-h {
     justify-content: center;
 }
 
+.header-desktop a:hover{
+    color: #a3c5ff;
+    transition: .3s;
+}
+
 @media screen and (min-width: 600px) {
     header .wrapper {
         justify-content: flex-start;

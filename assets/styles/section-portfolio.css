@@ -27,31 +27,74 @@
     font-size: 15px;
 }
 
-.portfolio-btn {
-    width: 100%;
-    text-transform: uppercase;
-    font-size: 15px;
-    border: none;
-    background-color: #ced6e9;
-    padding: 20px;
+
+
+.btn-more  {
+  text-decoration: none;
+  outline: none;
+  color: #565656;
+  position: relative; /*если убрать, то получится другой дизайн*/
+  padding: 20px;
+  border: 1px solid;
+  border-image-slice: 1;
+  font-size: 20;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+  text-align: center;
+}
+
+.btn-more:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background-color: #ced6e9;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+.btn-more:hover {background: rgba(255,255,255,0); color: white; transition: .6s;}
+.btn-more:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
 }
 
 .gallery-item {
     width: 100%;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 
 .gallery-item img {
     max-width: 100%;
 }
 
+@media screen and (min-width: 320px) {
+    .btn-more  {
+        width: 300px;
+        margin-top: 20px;
+        align-items: center;
+    }
 
+    .gallery-item {
+        margin-top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+ 
 @media screen and (min-width: 768px) {
   .portfolio{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .gallery-item {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .portfolio-gallery {

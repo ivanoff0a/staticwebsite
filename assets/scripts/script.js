@@ -9,9 +9,18 @@ $(document).ready(function() {
 
     $(".owl-carousel").owlCarousel({
         items: 1,
-        autoHeight: true
+        autoHeight: true,
+        animateOut: 'fadeOut'
+        
     });
 
+    AOS.init({
+      offset: 200,
+      duration: 800,
+      easing: 'ease-in-sine',
+      delay: 300,
+
+    });
 
     let modalToggler = $(".js-modal-toggler"),
         modal = $(".modal"),
@@ -23,7 +32,7 @@ $(document).ready(function() {
             ".js-modal-inst",
             ".modal-map",
             ".modal-toggler"
-        ];
+        ]; 
 
     $(".mobile-toggler").click(function() {
         if (modal.hasClass('-active')) {
@@ -43,7 +52,7 @@ $(document).ready(function() {
     setTimeout(function(){
         $(".-from-above").addClass("-animated");
         $(".-from-bottom").addClass("-animated");
-    }, 1000);
+    }, 500);
 
     modalToggler.click(function() {
         modal.toggleClass("-active");
