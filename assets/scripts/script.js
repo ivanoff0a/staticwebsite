@@ -10,8 +10,8 @@ $(document).ready(function() {
     $(".owl-carousel").owlCarousel({
         items: 1,
         autoHeight: true,
-        animateOut: 'fadeOut'
-        
+        animateOut: 'fadeOut',
+        nav: true
     });
 
     AOS.init({
@@ -19,7 +19,19 @@ $(document).ready(function() {
       duration: 800,
       easing: 'ease-in-sine',
       delay: 300,
+    });
 
+        $(".to-portfolio").click(function () {
+        //отменяем стандартную обработку нажатия по ссылке
+
+        //забираем идентификатор бока с атрибута href
+        var id  = $('.section-portfolio'),
+
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({scrollTop: top}, 1500);
     });
 
     let modalToggler = $(".js-modal-toggler"),
@@ -32,7 +44,7 @@ $(document).ready(function() {
             ".js-modal-inst",
             ".modal-map",
             ".modal-toggler"
-        ]; 
+        ];
 
     $(".mobile-toggler").click(function() {
         if (modal.hasClass('-active')) {

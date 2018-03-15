@@ -6,6 +6,46 @@
     z-index: 20;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
+.scroll  {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+
+.scroll p {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.scroll p:before {
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: -20px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    transition: .4s;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.scroll p:hover:before {
+    bottom: -30px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+}
+
 .main-content {
     padding: 0 10px;
 }
