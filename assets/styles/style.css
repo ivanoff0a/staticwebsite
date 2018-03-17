@@ -35,10 +35,9 @@ canvas {
 	position: absolute;
 	display: block;
 	vertical-align: bottom;
-	z-index: 1;
+	z-index: 0;
 }
 
-/* —— particles.js container —— */
 
 #particles-js {
 	width: 100%;
@@ -47,6 +46,6 @@ canvas {
 	opacity: 0.9;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 50% 50%;
+	background-position: 100%;
 }
 

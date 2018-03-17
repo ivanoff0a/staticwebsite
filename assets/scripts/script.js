@@ -22,17 +22,17 @@ $(document).ready(function() {
     });
 
         $(".to-portfolio").click(function () {
-        //отменяем стандартную обработку нажатия по ссылке
-
-        //забираем идентификатор бока с атрибута href
+          // mobileMenu.removeClass("-opened"); 
         var id  = $('.section-portfolio'),
-
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
-    });
+        });
+
+         $(".to-contact").click(function () {
+        var id  = $('footer'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+        });
 
     let modalToggler = $(".js-modal-toggler"),
         modal = $(".modal"),
@@ -66,16 +66,16 @@ $(document).ready(function() {
         $(".-from-bottom").addClass("-animated");
     }, 500);
 
-    modalToggler.click(function() {
-        modal.toggleClass("-active");
-        for(let i = 0; i < modalElems.length ; i++) {
-            let timeToWait = i * 200;
+    // modalToggler.click(function() {
+    //     modal.toggleClass("-active");
+    //     for(let i = 0; i < modalElems.length ; i++) {
+    //         let timeToWait = i * 200;
 
-            setTimeout(function() {
-                $(modalElems[i]).toggleClass("-active");
-            }, 200 + timeToWait)
-        }
-    });
+    //         setTimeout(function() {
+    //             $(modalElems[i]).toggleClass("-active");
+    //         }, 200 + timeToWait)
+    //     }
+    // });
 
 });
 
